@@ -11,6 +11,11 @@ function App() {
    const [contactusPage, setContactusPage]= useState(false);
    const [teamPage, setTeamPage] = useState(false);
 
+   const [careerPage, setCareerPage] = useState(false);
+
+   const [productPageMenu, setProductPageMenu] = useState(false);	
+
+   	
 
 
 
@@ -19,7 +24,9 @@ function App() {
    function showHomePage(){
       setHomePage(true);
       setContactusPage(false);
-      setTeamPage(false);	   
+      setTeamPage(false);
+      setCareerPage(false);
+      	   
    }
 
 
@@ -28,6 +35,7 @@ function App() {
       setContactusPage(true);
       setHomePage(false);
       setTeamPage(false);	   
+      setCareerPage(false);	   
    }
 
 
@@ -35,10 +43,26 @@ function App() {
    function showTeamPage(){
       setTeamPage(true);
       setContactusPage(false);
-      setHomePage(false);	   
+      setHomePage(false);
+      setCareerPage(false);	   
 
    }
 
+
+  function showCareerPage(){
+   setCareerPage(true);
+   setTeamPage(false);
+   setContactusPage(false);
+   setHomePage(false);	  
+
+
+  }
+
+
+   function showDropDownPage(){
+    setProductPageMenu(!productPageMenu);
+
+   }
 
 
 
@@ -64,6 +88,24 @@ function App() {
              TEAM
           </div>
         
+          <div className={classes.careerPageButton} onClick={showCareerPage}>
+             Career
+          </div>
+
+
+	  <div className={classes.producMenuButton} onClick={showDropDownPage}>
+             Products
+          </div>
+
+          { productPageMenu && 
+	  <div className={classes.dropDownMenu}>
+
+           Goto our Teaching platform
+
+	  </div>
+          }
+
+
 
 
       </div>
@@ -100,6 +142,22 @@ function App() {
            </div>
 
          }
+
+
+
+        { careerPage &&
+          <div className={classes.teamPage}>
+
+            This is Career page
+
+           </div>
+
+         }
+
+
+
+
+
 
 
 

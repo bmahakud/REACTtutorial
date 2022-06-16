@@ -42,6 +42,19 @@ margin-left: 20px;
 }
 
 
+.careerPageButton{
+border-style: solid;
+margin-left: 20px;
+
+}
+
+.producMenuButton{
+border-style: solid;
+margin-left: 20px;
+}
+
+
+
 
 .homePage{
 
@@ -61,7 +74,14 @@ font-size: 20px;
 
 
 
-
+.dropDownMenu{
+position: absolute;
+top: 50px;
+border-style: solid;
+height: 50px;
+right: 30%;
+background-color: orange;
+}
 
 
 
