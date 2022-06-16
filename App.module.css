@@ -1,0 +1,71 @@
+
+.app{
+
+border-style: solid;
+border-color: red;
+height:98vh;
+overflow-y: scroll;
+}
+
+
+.header{
+border-style:solid ;
+border-color: green;
+border-width: 1px;
+height:50px;
+background-color: lightgrey;
+display:flex;
+justify-content: center;
+}
+
+
+.body{
+
+border-style: solid;
+height: 1400px;
+background-color: white;
+}
+
+.homePageButton{
+border-style: solid;
+margin-left: 20px;
+}
+
+.aboutPageButton{
+border-style: solid;
+margin-left: 20px;
+}
+
+.teamPageButton{
+border-style: solid;
+margin-left: 20px;
+}
+
+
+
+.homePage{
+
+font-size: 50px;
+
+}
+
+.aboutPage{
+font-size: 50px;
+}
+
+
+.teamPage{
+
+font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
