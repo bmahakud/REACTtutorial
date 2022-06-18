@@ -1,0 +1,33 @@
+
+.homePage{
+
+font-size: 50px;
+
+}
+
+
+.titleDiv{
+border-style:none;
+text-align: center;
+height: 150px;
+padding-top: 30px;
+font-family: Sans-serif;
+}
+
+.picDiv{
+
+border-style:none;	
+display: flex;
+justify-content: center;
+}
+
+.aboutcompanyDiv{
+border-style:solid;
+
+}
+
+.userImage{
+height: 20%;
+width:30%;
+border-style: none;
+}

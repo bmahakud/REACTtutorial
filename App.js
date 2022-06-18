@@ -4,6 +4,13 @@ import React,{useState} from 'react';
 
 import classes from './App.module.css';
 
+import Home from './Home'
+
+
+
+import {BsChevronDown} from 'react-icons/bs';
+
+
 function App() {
 
 
@@ -89,18 +96,18 @@ function App() {
           </div>
         
           <div className={classes.careerPageButton} onClick={showCareerPage}>
-             Career
+             CAREER
           </div>
 
 
 	  <div className={classes.producMenuButton} onClick={showDropDownPage}>
-             Products
+             <div>PRODUCTS <BsChevronDown/></div>
           </div>
 
           { productPageMenu && 
 	  <div className={classes.dropDownMenu}>
 
-           Goto our Teaching platform
+          <b> Goto our Teaching platform</b>
 
 	  </div>
           }
@@ -115,11 +122,8 @@ function App() {
 
 
         { homePage &&
-        <div className={classes.homePage}>
-    
-           This is home page  
-         
-        </div>
+
+          <Home/>
 
         }
 
